@@ -1,0 +1,67 @@
+body, html {
+    background: white;
+}
+.boxi {
+    margin: 50px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 8px minmax(0, 100%);
+    gap: 1rem;
+    max-width: 50%;
+    margin-left: 100px;
+    position: relative;
+}
+.lineup {
+    background: #D0D0D0;
+    border-radius: 4px;
+}
+.line {
+    position: relative;
+    background: #7CDD6D;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+
+}
+.line:after {
+    display: table-cell;
+    position: absolute;
+    right: -6px;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    background: green;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    content: '';
+    background: url(https://c.radikal.ru/c12/2009/b1/58088aeb6a80.png) no-repeat;
+}
+.content {
+    display: inline-grid;
+    grid-template-columns: minmax(0, 100%);
+    grid-template-rows: max-content;
+    gap: 2rem;
+    width: 100%;
+}
+.item {
+    padding: 1rem;
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: darkgray;
+}
+.item.item_active {
+    color: #000;
+}
+.subtitle {
+    font-size: 22px;
+}
+.desc {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
